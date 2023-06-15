@@ -10,9 +10,9 @@ contract FundMeTest is Test {
     FundMe fundMe;
 
     address USER = makeAddr("user");
-    uint constant SEND_VALUE = 0.1 ether;
-    uint constant STARTING_BAL = 20 ether;
-    uint constant GAS_PRICE = 1;
+    uint256 constant SEND_VALUE = 0.1 ether;
+    uint256 constant STARTING_BAL = 20 ether;
+    uint256 constant GAS_PRICE = 1;
 
     function setUp() external {
         // fundMe = new FundMe(0x694AA1769357215DE4FAC081bf1f309aDC325306);
@@ -45,7 +45,7 @@ contract FundMeTest is Test {
     function testFundUpdatesFundedDataStructure() public {
         vm.prank(USER);
         fundMe.fund{value: SEND_VALUE}();
-        uint amountFunded = fundMe.getAddressToAmountFunded(USER);
+        uint256 amountFunded = fundMe.getAddressToAmountFunded(USER);
         assertEq(amountFunded, SEND_VALUE);
     }
 
@@ -75,13 +75,13 @@ contract FundMeTest is Test {
         uint256 startingOwnerBalance = fundMe.getOwner().balance;
 
         // Act
-        uint gasStart = gasleft();
+        uint256 gasStart = gasleft();
         vm.txGasPrice(GAS_PRICE);
         vm.prank(fundMe.getOwner());
         fundMe.withdraw();
 
-        uint gasEnd = gasleft();
-        uint gasUsed = (gasStart - gasEnd) * tx.gasprice;
+        uint256 gasEnd = gasleft();
+        uint256 gasUsed = (gasStart - gasEnd) * tx.gasprice;
         console.log(gasUsed);
 
         // Assert
@@ -114,9 +114,6 @@ contract FundMeTest is Test {
 
         // Assert
         assert(address(fundMe).balance == 0);
-        assert(
-            startingFundMeBalance + startingOwnerBalance ==
-                fundMe.getOwner().balance
-        );
+        assert(startingFundMeBalance + startingOwnerBalance == fundMe.getOwner().balance);
     }
 }
