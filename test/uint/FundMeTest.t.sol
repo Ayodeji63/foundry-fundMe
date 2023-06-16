@@ -3,8 +3,8 @@
 pragma solidity ^0.8.18;
 
 import {Test, console} from "forge-std/Test.sol";
-import {FundMe} from "../src/FundMe.sol";
-import {DeployFundMe} from "../script/DeployFundMe.s.sol";
+import {FundMe} from "../../src/FundMe.sol";
+import {DeployFundMe} from "../../script/DeployFundMe.s.sol";
 
 contract FundMeTest is Test {
     FundMe fundMe;
@@ -114,6 +114,9 @@ contract FundMeTest is Test {
 
         // Assert
         assert(address(fundMe).balance == 0);
-        assert(startingFundMeBalance + startingOwnerBalance == fundMe.getOwner().balance);
+        assert(
+            startingFundMeBalance + startingOwnerBalance ==
+                fundMe.getOwner().balance
+        );
     }
 }
