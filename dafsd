@@ -1,0 +1,43 @@
+[33mcommit dcf70dd98635c4e83f09dc40bd7ffcbad56814b1[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Ayodeji <olusanyasamson633@gmail.com>
+Date:   Fri Jun 16 13:48:01 2023 +0100
+
+    first-commit
+
+[33mcommit 5eb464bee7efecb54885b45c3a7543f305d9f3ce[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Ayodeji <olusanyasamson633@gmail.com>
+Date:   Fri Jun 16 13:46:21 2023 +0100
+
+    first commit
+
+[33mcommit 763b53e18fbd1546e35c12f6a72009076c559598[m
+Author: Ayodeji <olusanyasamson633@gmail.com>
+Date:   Thu Jun 15 23:18:30 2023 +0100
+
+    test
+
+[33mcommit c7a225a9d1cc63e5f763fbf25b9f0fa8c3666f03[m
+Author: Ayodeji <olusanyasamson633@gmail.com>
+Date:   Thu Jun 15 22:42:35 2023 +0100
+
+    testing
+
+[33mcommit f55435e9540ad1538ac5baf7661fb99af8f2a8a0[m
+Author: Ayodeji <olusanyasamson633@gmail.com>
+Date:   Thu Jun 15 22:42:10 2023 +0100
+
+    testing
+
+[33mcommit 8987601e374d2b339fd2e39f0b5066c7181628df[m
+Author: Ayodeji <olusanyasamson633@gmail.com>
+Date:   Mon Jun 12 11:16:44 2023 +0100
+
+    forge install: forge-std
+    
+    v1.5.6
+
+[33mcommit 51ee0c614c59eab75040d1ccd1fe93f4d0695b3c[m
+Author: Ayodeji <olusanyasamson633@gmail.com>
+Date:   Mon Jun 12 11:16:35 2023 +0100
+
+    chore: forge init
