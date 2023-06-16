@@ -2,14 +2,14 @@
 
 # About
 
-This is Fundind App
+This is Funding App
 
 # Getting started 
 
 ## Requirements 
-1. git 
+- git 
 
-2. foundry 
+- foundry 
 
 ## Quickstart
 
